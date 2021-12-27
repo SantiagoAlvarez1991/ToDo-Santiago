@@ -56,16 +56,16 @@ form.addEventListener("submit", (evento) => {
   }
 
   //Validacion correo
-  // switch (true) {
-  //   case email.value.trim() === "":
-  //     errores.push(mensajes.inputVacio);
-  //     errorEmail.innerText = mensajes.inputVacio;
-  //     break;
-  //   case !email.value.match(exRegEmail):
-  //     errores.push(mensajes.valoresEmail);
-  //     errorEmail.innerText = mensajes.valoresEmail;
-  //     break;
-  // }
+  switch (true) {
+    case email.value.trim() === "":
+      errores.push(mensajes.inputVacio);
+      errorEmail.innerText = mensajes.inputVacio;
+      break;
+    case !email.value.match(exRegEmail):
+      errores.push(mensajes.valoresEmail);
+      errorEmail.innerText = mensajes.valoresEmail;
+      break;
+  }
 
   //Validacion contraseña
   switch (true) {
